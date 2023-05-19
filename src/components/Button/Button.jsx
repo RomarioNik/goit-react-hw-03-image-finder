@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { LoadButton } from './Button.styled';
 
 const Button = ({ onHandleClickButtonLoad }) => {
@@ -5,3 +6,7 @@ const Button = ({ onHandleClickButtonLoad }) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  onHandleClickButtonLoad: PropTypes.func.isRequired,
+};
